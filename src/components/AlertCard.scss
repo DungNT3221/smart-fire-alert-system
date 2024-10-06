@@ -1,0 +1,26 @@
+.alert-card {
+  background-color: #fff8f0;
+  border: 1px solid #f5c6aa;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .alert-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #d9534f;
+  }
+
+  .alert-message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .alert-icon {
+    float: right;
+    color: #d9534f;
+    font-size: 24px;
+  }
+}

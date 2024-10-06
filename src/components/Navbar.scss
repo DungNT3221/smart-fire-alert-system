@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 20px;
+      color: white;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}

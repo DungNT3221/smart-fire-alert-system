@@ -1,0 +1,73 @@
+.sidebar-container {
+  position: relative;
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 28px;
+    cursor: pointer;
+    margin: 15px;
+
+    span {
+      display: block;
+      height: 4px;
+      background-color: #ffffff; // Màu trắng để dễ nhìn hơn trên nền tối
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+
+    &:hover span {
+      background-color: #ff6b6b; // Hiệu ứng hover màu đỏ nổi bật
+    }
+  }
+
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #2c3e50; // Màu nền tối hơn (tông xanh xám)
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15); // Bóng đổ tạo cảm giác nổi
+    position: fixed;
+    top: 0;
+    left: -250px; // Ẩn ban đầu
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    color: #ecf0f1; // Màu chữ sáng hơn để dễ đọc trên nền tối
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-header {
+    padding: 20px;
+    background-color: #34495e; // Màu đậm hơn cho header
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase; // In hoa tiêu đề để nổi bật hơn
+  }
+
+  .sidebar-item {
+    padding: 15px;
+    list-style: none;
+    border-bottom: 1px solid #7f8c8d; // Đường phân cách nhẹ giữa các item
+
+    a {
+      color: #ecf0f1; // Màu sáng cho chữ
+      font-size: 1.2rem;
+      text-decoration: none;
+      display: block;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #1abc9c; // Màu nền nổi bật khi hover (xanh ngọc)
+      color: #ffffff; // Đổi màu chữ khi hover
+    }
+  }
+}

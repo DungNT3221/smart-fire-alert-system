@@ -1,0 +1,19 @@
+.history {
+  padding: 20px;
+  background-color: #f9f9f9; // Màu nền sáng
+  border-radius: 8px; // Bo góc
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Bóng đổ nhẹ
+  margin: 20px; // Khoảng cách xung quanh
+
+  h2 {
+    color: #3498db; // Màu chữ xanh cho tiêu đề
+    font-size: 24px; // Kích thước chữ lớn
+    margin-bottom: 10px; // Khoảng cách dưới tiêu đề
+  }
+
+  p {
+    color: #555; // Màu chữ xám cho nội dung
+    font-size: 16px; // Kích thước chữ nội dung
+    line-height: 1.5; // Khoảng cách giữa các dòng
+  }
+}
